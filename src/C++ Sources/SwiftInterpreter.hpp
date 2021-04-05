@@ -10,7 +10,7 @@
 
 namespace swift
 {
-int sayHello(const std::string& inFirstName, const std::string_view& inLastName);
+int sayHello(const std::string& inFirstName, std::string_view inLastName);
 }
 
 #endif // SWIFT_INTERPRETER_HPP

@@ -10,7 +10,7 @@
 #include "SwiftObjCBridge.hpp"
 #include "ObjcTypes.h"
 
-int swift::sayHello(const std::string& inFirstName, const std::string_view& inLastName)
+int swift::sayHello(const std::string& inFirstName, std::string_view inLastName)
 {
     auto firstName = objc::make<NSString>(inFirstName);
     auto lastName = objc::make<NSString>(inLastName);
